@@ -1,0 +1,24 @@
+<script>
+    //Considere a lista abaixo:let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];Apresente apenas os números pares. Apresente também a quantidade de números pares que existem e apresente a quantidade de elementos da lista original.
+
+    //ENTRADA
+    let pares = [];
+
+    let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+    for (let item of listaDeItens) {
+        if((isNaN(item) == false) && (item % 2 == 0)) {
+            pares.push(item)
+        }
+    }
+
+    function organiza (a, b) {
+        return a - b;
+    }
+
+    let quantidadePar = pares.length;
+    let quantidadeTotal = listaDeItens.length;
+
+document.write("Lista pares: ", pares, `.<br>`);
+document.write("Quantidade de números pares: ", quantidadePar, `.<br>`);
+document.write("Quantidade de elementos: ", quantidadeTotal, ".");
+</script>

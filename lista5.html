@@ -1,0 +1,31 @@
+<script>
+    //Considere a lista de nomes abaixo:let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];Identifique os nomes que começam com qualquer vogal (A, E, I, O, U) e apresente os nomes em ordem alfabética.
+
+    //ENTRADA
+
+    let listaDeNomes = ["Amanda", "Eduardo", "Fábio", "Evelin", "César", "José", "Ivo", "Eva", "Otávio", "Inez", "Osmar", "Ulisses"];
+    let lista = [];
+    for (let item of listaDeNomes) {
+        switch (item[0]) {
+            case "A":
+                 lista.push(item);
+                break;
+            case "E":
+                lista.push(item);
+                break;
+            case "I": 
+                lista.push(item);
+                break;
+            case "O": 
+                lista.push(item);
+                break;
+            case "U":
+                lista.push(item);
+                break;
+            default:
+                break;
+        }
+    }
+
+    document.write(`Os nomes que começam com vagal são: `, lista.sort().join(" , "), ".")
+</script>

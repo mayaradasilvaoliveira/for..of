@@ -1,0 +1,28 @@
+<script>
+    //Considere a lista de números abaixo:let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];Separe os números pares e os números ímpares em listas distintas e apresente as listas de forma crescente e forma descrescente.
+
+    //ENTRADA
+
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+    let pares = [];
+    let impares = [];
+
+    for (let item of listaDeNumeros) {
+        if (item % 2 == 0) {
+            pares.push(item);
+        }
+        else {
+            impares.push(item);
+        }
+    }
+    function organizacao (a, b) {
+        return a - b;
+    }
+
+    document.write("Crescentes:", pares.sort(organizacao), `;<br>`)
+    document.write(impares.sort(organizacao), `.<br>`)
+    document.write("Decrescente:", pares.reverse(organizacao), `;<br>`)
+    document.write(impares.reverse(organizacao), ".");
+
+</script>
